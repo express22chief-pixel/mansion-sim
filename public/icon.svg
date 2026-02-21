@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d16"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#30d158" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#30d158" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <!-- 家のシルエット（左） -->
+  <!-- 屋根 -->
+  <polygon points="96,248 196,148 296,248" fill="#ffffff" opacity="0.95"/>
+  <!-- 壁 -->
+  <rect x="116" y="248" width="160" height="130" rx="4" fill="#ffffff" opacity="0.95"/>
+  <!-- ドア -->
+  <rect x="172" y="308" width="48" height="70" rx="6" fill="#1a1a2e" opacity="0.7"/>
+  <!-- 窓左 -->
+  <rect x="128" y="268" width="36" height="30" rx="4" fill="#30d158" opacity="0.7"/>
+  <!-- 窓右 -->
+  <rect x="248" y="268" width="36" height="30" rx="4" fill="#30d158" opacity="0.7"/>
+
+  <!-- 折れ線グラフ（右下） -->
+  <!-- グラフ軸 -->
+  <line x1="210" y1="400" x2="430" y2="400" stroke="#3a3a3c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="210" y1="400" x2="210" y2="220" stroke="#3a3a3c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- グラフエリア塗り -->
+  <polygon
+    points="220,380 270,350 320,320 370,280 420,230 420,400 220,400"
+    fill="url(#chartGrad)"
+    opacity="0.5"
+  />
+
+  <!-- グラフ折れ線 -->
+  <polyline
+    points="220,380 270,350 320,320 370,280 420,230"
+    fill="none"
+    stroke="#30d158"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- グラフの点 -->
+  <circle cx="220" cy="380" r="7" fill="#30d158"/>
+  <circle cx="270" cy="350" r="7" fill="#30d158"/>
+  <circle cx="320" cy="320" r="7" fill="#30d158"/>
+  <circle cx="370" cy="280" r="7" fill="#30d158"/>
+  <circle cx="420" cy="230" r="9" fill="#30d158"/>
+
+  <!-- アプリ名 BuyRent -->
+  <text x="256" y="470" font-family="-apple-system, 'Helvetica Neue', sans-serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">BuyRent</text>
+</svg>
